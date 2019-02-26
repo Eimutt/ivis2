@@ -113,6 +113,7 @@ function choose_country(country_name){
 	for(key in data){
 		if(data[key].country == country_name && data[key].wave == current_wave){
 			console.log(data[key])
+				d3.select("#chart").html("");
 			test(data[key])
 		}
 	}
@@ -190,7 +191,7 @@ function test(country_data){
 	  var cfg = {
 		 radius: 5,
 		 w: 600,
-		 h: 600,
+		 h: 500,
 		 factor: 1,
 		 factorLegend: 1,
 		 levels: 3,
@@ -199,7 +200,7 @@ function test(country_data){
 		 opacityArea: 0.5,
 		 ToRight: 5,
 		 TranslateX: 80,
-		 TranslateY: 100,
+		 TranslateY: 50,
 		 ExtraWidthX: 100,
 		 ExtraWidthY: 100,
 		};
@@ -446,6 +447,7 @@ function update_radargraph(){
 		if(data[key].wave == current_wave && chosen_country == data[key].country){
 			console.log(data[key])
 			test(data[key]);
+
 		}
 	}
 }
