@@ -438,7 +438,7 @@ function test(country_data){
     .attr("y", 35)
     .style('font-size', '24px')
     .style('font-weight', 'bold')
-	.text(chosen_country);
+	.text(chosen_country + "(" + (5*current_wave+1980) + "-" + (5*current_wave+1984) +")");
 
 }
 
