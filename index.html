@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://d3js.org/d3.v5.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3-axis.v1.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3-scale.v2.min.js"></script>
+<script src="https://unpkg.com/d3-simple-slider/build/d3-simple-slider.js"></script>
+ <script>
+    d3version5 = d3
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+ <script>
+    d3version3 = d3
+  </script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script type="text/javascript" src="datamaps.world.min.js"></script>
+<script type="text/javascript" src="assignment2.js?version=1.5"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="assignment2.css?version=1.5">
+</head>
+<body onload="draw_map(2)">
+	<div id="header">
+		<h3>World Map</h3>
+	</div>
+	<div id="mainbody">
+		<div>
+			<div id="container" style="position: relative; width: 1056px; height: 600px;"></div>
+			<div class="row align-items-center">
+			    <div class="col-sm"><div id="slider-step"></div></div>
+		  	</div>
+		</div>
+		
+	  	<div class="dropdown ">
+	  		<select class="parameterfilter" onchange="change_parameter(this.value)">
+                <option value="family" selected="selected">Family</option>
+                <option value="friends">Friends</option>
+                <option value="work">Work</option>
+                <option value="religion">Religion</option>
+                <option value="leisure time">Leisure Time</option>
+                <option value="politics">Politics</option>
+                <option value="health">Health</option>
+                <option value="happiness">Happiness</option>
+            </select>
+		 </div>
+	</div>
+</body>
+
+
+</html>
